@@ -1,7 +1,14 @@
+@font-face {
+    font-family: Melbourne;
+    src: url(../app/fonts/Melbourne_reg.otf);
+}
+
 /* Set HTML and BODY to have no margin or padding */
 html, body {
+    background: #29235c;
     padding: 0px;
     margin: 0px;
+    font-family: Melbourne;
 }
 
 /* Create the refresh animation on submit */
@@ -22,11 +29,34 @@ html, body {
   to { transform: scale(1) rotate(360deg);}
 }
 
-input {
-  margin-right: 10px;
-}
-
 #text_opt_in {
   font-size: 11px;
   color: #ccc;
+}
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    min-width: 600px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#logo {
+    margin-top: 20px;
+}
+
+.container {
+    min-width: 600px;
+    width: 70%;
+    max-width: 800px;
+    border: 1px solid #000;
+    overflow: hidden;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 25px;
+    background-color: #fff;
 }

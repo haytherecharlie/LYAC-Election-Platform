@@ -3,127 +3,79 @@
 
 <head>
 
-  <!-- Title -->
-  <title>TExTR</title>
+    <!-- Title -->
+    <title>TExTR</title>
 
-  <!-- Vendor.min.css -->
-  <link href="../app/css/vendor.min.css" rel="stylesheet"/>
+    <!-- Vendor.min.css -->
+    <link href="../app/css/vendor.min.css" rel="stylesheet"/>
 
-  <!-- Vendor.min.js -->
-  <script type="text/javascript" src="../app/js/vendor.min.js">
-  </script>
-  
-  <!-- Animated Loading Icon -->
-  <link href="vote.css" rel="stylesheet"/>
+    <!-- Vendor.min.js -->
+    <script type="text/javascript" src="../app/js/vendor.min.js">
+    </script>
+
+    <!-- Animated Loading Icon -->
+    <link href="vote.css" rel="stylesheet"/>
 
 </head>
-
 <body>
-  <div class="container">
-  <form class="form-horizontal" role="form" id="test-form">
-    <div class="form-group">
-      <label class="col-lg-3 control-label">First Name</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group">
-          <input type="text" class="form-control" name="first_name" placeholder="First Name"/>
+
+<div class="image-container">
+    <img id="logo" src="../app/img/logo.svg">
+</div>
+
+<div class="container">
+    <form role="form" id="test-form">
+
+        <h4>Personal Information</h4>
+        <div class="form-group">
+            <input type="text" class="form-control" name="first_name" placeholder="First Name"/>
         </div>
-      </div>
-    </div>
 
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Last Name</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group">
-          <input type="text" class="form-control" name="last_name" placeholder="Last Name"/>
+        <div class="form-group">
+            <input type="text" class="form-control" name="last_name" placeholder="Last Name"/>
         </div>
-      </div>
-    </div>
 
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Gender</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group">
-          <input type="text" class="form-control" name="gender" placeholder="Gender"/>
+        <div class="form-group">
+            <input type="text" class="form-control" name="gender" placeholder="Gender"/>
         </div>
-      </div>
-    </div>
 
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Age</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group col-lg-10">
-          <input type="number" class="form-control" name="age" placeholder="Age"/>
+        <div class="form-group">
+            <input type="number" class="form-control" name="age" placeholder="Age"/>
         </div>
-      </div>
-    </div>
 
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Email</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group">
-          <input type="text" class="form-control" name="email_address" placeholder="name@domain.com"/>
+        <div class="form-group">
+            <input type="text" class="form-control" name="email_address" placeholder="name@domain.com"/>
         </div>
-      </div>
-    </div>
 
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Cell Number</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group col-lg-10">
-          <input type="number" class="form-control" name="cell_number" placeholder="Cell Phone Number"/>
-          <span id="text_opt_in">By adding your cell phone number, you will recieve a text message to verify your vote instead of an email. If you prefer to recieve an email verification, please leave this field blank. </span>
+        <div class="form-group">
+            <input type="number" class="form-control" name="cell_number" placeholder="Cell Phone Number"/>
+            <span id="text_opt_in">To confirm your vote, we will send you a text message with a verification code. <br> Your vote will not be counted until you have been verified.</span>
         </div>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Vote</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group col-lg-10" id="your_vote">
-          <label><input for="your_vote" type="radio" name="your_vote" value="Amir Farahi"> Amir Farahi</label><br>
-          <label><input for="your_vote" type="radio" name="your_vote" value="Jake Sutton"> Jake Sutton</label><br>
-          <label><input for="your_vote" type="radio" name="your_vote" value="Leenat Jilani"> Leenat Jilani</label>
+        <hr>
+        <h4>Your Vote</h4>
+        <div class="form-group">
+            <input for="your_vote" type="radio" name="your_vote" value="Amir Farahi"> Amir Farahi</label><br>
+            <input for="your_vote" type="radio" name="your_vote" value="Jake Sutton"> Jake Sutton</label><br>
+            <input for="your_vote" type="radio" name="your_vote" value="Leenat Jilani"> Leenat Jilani</label>
         </div>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Opt In</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group col-lg-10">
-        <label><input type="radio" name="email_opt" value="yes"> I would like to recieve Email Updates from the LYAC</label>
+        <hr>
+        <h4>Referendum</h4>
+        <div class="form-group">
+            <label>Would you be in favour of creating a discounted bus pass for high schoolers in London?</label><br>
+            <input type="radio" name="referendum" value="Yes"> Yes</label><br>
+            <input type="radio" name="referendum" value="No"> No</label>
         </div>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Referendum</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group col-lg-10">
-          <label>Question</label><br>
-          <label><input type="radio" name="referendum" value="Yes"> Yes</label><br>
-          <label><input type="radio" name="referendum" value="No"> No</label>
+        <hr>
+        <div class="form-group">
+            <input type="radio" name="email_opt" value="yes"> I would like to recieve Email Updates from the LYAC</label>
         </div>
-      </div>
-    </div>
 
-    <div class="form-group">
-      <label class="col-lg-3 control-label">Referendum</label>
-      <div class="col-lg-3 inputGroupContainer">
-        <div class="input-group col-lg-10">
-        <input type="text" name="verify_url"></input>
+        <div class="form-group">
+            <button type="submit" class="btn btn-default" id="postForm">Cast Your Vote</button>
         </div>
-      </div>
-    </div>
 
-    <div class="form-group">
-      <div class="col-lg-9 col-lg-offset-3">
-        <button type="submit" class="btn btn-default" id="postForm">Submit</button>
-      </div>
-    </div>
-
-  </form>
-  
+    </form>
+</div>
 </body>
 <script src="vote.js"></script>
 

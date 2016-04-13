@@ -2,14 +2,24 @@ var verify = (function () {
 
     function checkRadio() {
         var r = document.getElementsByName("your_vote");
+        var s = document.getElementsByName("referendum");
         var c = -1
+        var d = -1
 
         for (var i = 0; i < r.length; i++) {
             if (r[i].checked) {
                 c = i;
             }
         }
-        if (c == -1) alert("please select radio");
+        for (var i = 0; i < s.length; i++) {
+            if (s[i].checked) {
+                d = i;
+            }
+        }
+        if (c == -1 || d == -1) {
+            return false;
+        }
+        return true;
     }
 
     $(document).ready(function () {
@@ -147,18 +157,66 @@ var verify = (function () {
         return wardNumber[1];
     }
 
-    $('.container').prepend('<h1>LYAC Election: Ward ' + getWard() + ' Ballot</h1><hr>' );
+    $('.container').prepend('<h1>LYAC Election: Ward ' + getWard() + ' Ballot</h1><hr>');
 
-    var inputArray = [];
+    $('#postForm').on('click', function (e) {
 
-    $('#postForm').on('click', function () {
-
-        $('input[type="text"], input[type="number"]').each(function () {
-            inputArray.push($(this).val());
-            inputArray.splice(5, 1);
-        });
-        checkRadio();
-        console.log(inputArray);
+        var inputArray = [];
+        if (checkRadio() === true) {
+            e.preventDefault();
+            $('input[type="text"], input[type="number"], input[type="radio"]:checked').each(function () {
+                inputArray.push($(this).val());
+            });
+            if (document.getElementById('email_opt').checked) {
+                inputArray.push('yes');
+            } else {
+                inputArray.push('no');
+            }
+            inputArray.push("" + createVerifyCode());
+            var temp = createArrayFromURI()
+            for (i in temp) {
+                inputArray.push(temp[i]);
+            }
+            console.log(inputArray);
+            setURI(inputArray);
+        }
+        else if (checkRadio() === false) {
+            e.preventDefault();
+            $('#vote-modal').modal('show');
+        }
     });
+
+    function createVerifyCode() {
+        var code = Math.round(Math.random() * 10000);
+        return code;
+    }
+
+    function createArrayFromURI() {
+        var url = location.href.split('?');
+        var keyPair = url[1].split('&');
+        var dataArray = [];
+        for (i in keyPair) {
+            var temp = keyPair[i].split('=');
+            dataArray.push(temp[1]);
+        }
+        return dataArray;
+    }
+
+    function setURI(inputArray) {
+        var url = location.origin + '/verify/?' +
+            'first_name=' + inputArray[0] +
+            '&last_name=' + inputArray[1] +
+            '&address=' + inputArray[10] +
+            '&gender=' + inputArray[2] +
+            '&age=' + inputArray[3] +
+            '&cell_number=' + inputArray[5] +
+            '&email_address=' + inputArray[4] +
+            '&your_vote=' + inputArray[6] +
+            '&email_opt=' + inputArray[8] +
+            '&referendum=' + inputArray[7] +
+            '&ward=' + inputArray[11] +
+            '&ref=' + inputArray[9];
+        window.location = url ;
+    }
 
 })();

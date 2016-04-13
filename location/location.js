@@ -79,7 +79,7 @@ var address = (function () {
                             return 14;
                             break;
                         default:
-                            return null;
+                            return undefined;
                             break;
                     }
                 }
@@ -117,11 +117,12 @@ var address = (function () {
     }
 
     function createURI(address) {
-        if(ward !== null) {
+        if(ward === undefined) {
+            $('#vote-modal').modal('show');
+        }
+        else if(ward !== null) {
             var url = location.origin + '/vote/?address=' + address + '&ward=' + ward;
             window.location = url;
-        } else {
-            $('#vote-modal').modal('show');
         }
     }
 

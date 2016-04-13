@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>LYAC Election 2016</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+	<!-- JavaScript -->
+	<script type="text/javascript" src="../app/js/vendor.min.js"></script>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="../app/css/vendor.min.css">
+	<link rel="stylesheet" type="text/css" href="verify.css">
+</head>
+<body>
+
+<div class="outer">
+	<div class="inner">
+		<a href="http://www.lyac.ca"><img id="logo" src="../app/img/logo.svg"></a><p>
+		<div id="information">
+			<hr>
+				<p id="paragraph">
+				<h1>Thanks for Voting!</h1>
+				You should recieve a text message with a 4 digit code shortly. 
+				</p>
+		</div>
+		<span id="determine-ward">Please Enter Verification Code Below</span><p>
+		<input type="text" id="auto-comp" /><br>
+		<div id="vote-container">
+			<input type="button" class="btn btn-primary btn-md" id="vote" value="Verify Your Vote"/>
+		</div>
+	</div>
+</div>
+
+<div class='modal fade' id='vote-modal' role='dialog'>
+    <div class='modal-dialog'>
+        <div class='modal-content'>
+			<div class="modal-header text-center">
+				<img id="logo-blue" src="../app/img/logo.png">
+			</div>
+			<div class="modal-body text-center">
+				<h3>Sorry, that isn't the right code.</h3>
+
+			</div>
+			<div class="modal-footer text-center">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="verify.js"></script>
+
+</body>
+</html>

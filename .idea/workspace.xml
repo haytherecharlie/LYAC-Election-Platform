@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db06553d-6d52-45f0-984b-ad30a3093f94" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vote/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vote/vote.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vote/vote.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/location/location.js" afterPath="$PROJECT_DIR$/location/location.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thanks/index.html" afterPath="$PROJECT_DIR$/thanks/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/verify/index.html" afterPath="$PROJECT_DIR$/verify/index.html" />
     </list>
     <ignored path="lyac_election.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +34,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="location.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/verify/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="90" selection-start-line="25" selection-start-column="90" selection-end-line="25" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/location/location.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="379">
@@ -72,11 +77,11 @@
         <option value="$PROJECT_DIR$/thanks/verify.js" />
         <option value="$PROJECT_DIR$/verify/verify.js" />
         <option value="$PROJECT_DIR$/vote/index.html" />
-        <option value="$PROJECT_DIR$/verify/index.html" />
         <option value="$PROJECT_DIR$/location/index.html" />
         <option value="$PROJECT_DIR$/thanks/index.html" />
         <option value="$PROJECT_DIR$/vote/vote.js" />
         <option value="$PROJECT_DIR$/location/location.js" />
+        <option value="$PROJECT_DIR$/verify/index.html" />
       </list>
     </option>
   </component>
@@ -133,6 +138,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyac_election" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyac_election" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="verify" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -184,12 +203,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1460501734598</updated>
-      <workItem from="1460501736141" duration="12415000" />
+      <workItem from="1460501736141" duration="12708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12415000" />
+    <option name="totallyTimeSpent" value="12708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -286,14 +305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/verify/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/vendor.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1785">
@@ -301,14 +312,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thanks/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -332,6 +335,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
           <caret line="118" column="33" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thanks/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verify/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="90" selection-start-line="25" selection-start-column="90" selection-end-line="25" selection-end-column="90" />
           <folding />
         </state>
       </provider>

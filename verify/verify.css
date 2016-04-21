@@ -25,23 +25,6 @@ table {
     text-align: left;
 }
 
-#one {
-    padding-left: 200px; 
-    width: 50px;
-}
-
-#two {
-    text-align: left;
-    padding-top: -5px;
-}
-
-.form-control {
-    margin: 5px;
-}
-
-#permissions {
-    font-size: 15px;
-}
 
 .outer {
     position: relative;
@@ -83,23 +66,6 @@ table {
     margin: 20px 0px;
 }
 
-.modal {
-    width: 600px;
-    position: absolute;
-    left: 50%;
-    margin-left: -300px;
-    overflow-y: hidden;
-}
-
-#logo-blue {
-    height: 100px;
-    width: auto;
-}
-
-.modal-body {
-    font-size: 30px;
-}
-
 #vote {
     background-color: #29235c;
     padding: 5px 20px;
@@ -110,4 +76,14 @@ table {
 
 #vote:focus {
     outline: none;
+}
+
+#your_vote {
+    background-color: transparent;
+    color: #fff;
+    border: 0px;
+    text-align: center;
+    font-size: 25px;
+    height: 50px;
+    box-shadow: none;
 }

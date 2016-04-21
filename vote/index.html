@@ -1,62 +1,49 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <!-- Title -->
     <title>LYAC Election 2016</title>
-
     <!-- Vendor.min.css -->
     <link href="../../app/css/vendor.min.css" rel="stylesheet"/>
-
     <!-- Vendor.min.js -->
     <script type="text/javascript" src="../../app/js/vendor.min.js">
     </script>
-
     <!-- Animated Loading Icon -->
     <link href="vote.css" rel="stylesheet"/>
-
 </head>
 <body>
-
 <div class="image-container">
     <img id="logo" src="../../app/img/logo.svg">
 </div>
-
 <div class="container">
     <form role="form" id="test-form">
-
         <h4>Personal Information</h4>
         <div class="form-group">
             <input type="text" class="form-control" name="first_name" placeholder="First Name"/>
         </div>
-
         <div class="form-group">
             <input type="text" class="form-control" name="last_name" placeholder="Last Name"/>
         </div>
-
         <div class="form-group">
             <input type="text" class="form-control" name="gender" placeholder="Gender"/>
         </div>
-
         <div class="form-group">
             <input type="number" class="form-control" name="age" placeholder="Age"/>
         </div>
-
         <div class="form-group">
             <input type="text" class="form-control" name="email_address" placeholder="name@domain.com"/>
         </div>
-
         <div class="form-group">
             <input type="number" class="form-control" name="cell_number" placeholder="Cell Phone Number"/>
-            <span id="text_opt_in">To confirm your vote, we will send you a text message with a verification code. <br> Your vote will not be counted until you have been verified.</span>
+            <span id="text_opt_in">To confirm your vote, we will send you either a text message or email with a verification code. 
+            <br> Your vote will not be counted until you have been verified.</span>
         </div>
         <hr>
         <h4>Your Vote</h4>
         <div class="form-group">
-            <input for="your_vote" type="radio" name="your_vote" value="Amir Farahi"> Amir Farahi</label><br>
-            <input for="your_vote" type="radio" name="your_vote" value="Jake Sutton"> Jake Sutton</label><br>
-            <input for="your_vote" type="radio" name="your_vote" value="Leenat Jilani"> Leenat Jilani</label>
+            <input for="your_vote" type="radio" name="your_vote" value="Amir_Farahi"> Amir Farahi</label><br>
+            <input for="your_vote" type="radio" name="your_vote" value="Jake_Sutton"> Jake Sutton</label><br>
+            <input for="your_vote" type="radio" name="your_vote" value="Leenat_Jilani"> Leenat Jilani</label>
         </div>
         <hr>
         <h4>Referendum</h4>
@@ -69,11 +56,15 @@
         <div class="form-group">
             <input type="checkbox" id="email_opt" name="email_opt" value="yes"> I would like to recieve Email Updates from the LYAC</label>
         </div>
-
+        <div class="form-group">
+            <input type="text" class="form-control" name="address" id="address" style="display: none;" />
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="ward" id="ward" style="display: none;"/>
+        </div>
         <div class="form-group">
             <button type="submit" class="btn btn-default" id="postForm">Cast Your Vote</button>
         </div>
-
     </form>
 </div>
 
@@ -85,7 +76,6 @@
             </div>
             <div class="modal-body text-center">
                 <h3>Please fill in all information</h3>
-
             </div>
             <div class="modal-footer text-center">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -133,7 +133,8 @@ var verify = (function () {
 
                 // Use Ajax to submit form data
                 var url = 'https://script.google.com/macros/s/AKfycbwcYgaF2tk_-k1nt436LNUBCRBd4YzBXKsC4a2_EiPePquW_Xg/exec';
-                var redirectUrl = 'success-page.html';
+                var arrayForm = makeArray();
+                var redirectUrl = setURI(arrayForm);
                 // show the loading
                 $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
                 var jqxhr = $.post(url, $form.serialize(), function (data) {
@@ -153,17 +154,36 @@ var verify = (function () {
 
     function getWard() {
         var url = location.href.split('&');
-        var wardNumber = url[1].split('=')
+        var wardNumber = url[1].split('=');
+        console.log(wardNumber[1]);
         return wardNumber[1];
     }
 
+    function getAddress() {
+        var url = location.href.split('&');
+        var address = url[0].split('=');
+        return address[1];
+    }
+
+    function setURI(inputArray) {
+        var url = 'http://votelyac.ca/verify/?' +
+            'timestamp=2349234982' +
+            '&your_vote=' + inputArray[6] +
+            '&referendum=' + inputArray[7] +
+            '&ward=' + inputArray[13];
+        return url;
+    }
+
+
+
     $('.container').prepend('<h1>LYAC Election: Ward ' + getWard() + ' Ballot</h1><hr>');
 
-    $('#postForm').on('click', function (e) {
-
+    function makeArray() {
         var inputArray = [];
         if (checkRadio() === true) {
-            e.preventDefault();
+            $('#address').val(getAddress());
+            $('#ward').val(getWard());
+
             $('input[type="text"], input[type="number"], input[type="radio"]:checked').each(function () {
                 inputArray.push($(this).val());
             });
@@ -177,14 +197,13 @@ var verify = (function () {
             for (i in temp) {
                 inputArray.push(temp[i]);
             }
-            console.log(inputArray);
-            setURI(inputArray);
+            return inputArray;
         }
         else if (checkRadio() === false) {
             e.preventDefault();
             $('#vote-modal').modal('show');
         }
-    });
+    }
 
     function createVerifyCode() {
         var code = Math.round(Math.random() * 10000);
@@ -200,23 +219,6 @@ var verify = (function () {
             dataArray.push(temp[1]);
         }
         return dataArray;
-    }
-
-    function setURI(inputArray) {
-        var url = location.origin + '/verify/?' +
-            'first_name=' + inputArray[0] +
-            '&last_name=' + inputArray[1] +
-            '&address=' + inputArray[10] +
-            '&gender=' + inputArray[2] +
-            '&age=' + inputArray[3] +
-            '&cell_number=' + inputArray[5] +
-            '&email_address=' + inputArray[4] +
-            '&your_vote=' + inputArray[6] +
-            '&email_opt=' + inputArray[8] +
-            '&referendum=' + inputArray[7] +
-            '&ward=' + inputArray[11] +
-            '&ref=' + inputArray[9];
-        window.location = url ;
     }
 
 })();

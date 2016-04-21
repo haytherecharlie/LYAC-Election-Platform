@@ -92,11 +92,11 @@ var address = (function () {
         var value = $('#auto-comp').val();
         if(value.length !== 0) {
             var addressArray = splitByComma(value);
-            if(addressArray.length !== 4) {
-                $('#vote-modal').modal('show');
-            } else {
+            if(addressArray.length === 4 || addressArray.length === 5 ) {
                var address = spaceToUnderscore(addressArray);
                 createURI(address);
+            } else {
+                $('#vote-modal').modal('show');
             }
         } else {
             $('#vote-modal').modal('show');
@@ -121,7 +121,7 @@ var address = (function () {
             $('#vote-modal').modal('show');
         }
         else if(ward !== null) {
-            var url = location.origin + '/vote/' + ward + '/?address=' + address + '&ward=' + ward;
+            var url = 'http://votelyac.ca/vote/?address=' + address + '&ward=' + ward;
             window.location = url;
         }
     }

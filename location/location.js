@@ -121,7 +121,7 @@ var address = (function () {
             $('#vote-modal').modal('show');
         }
         else if(ward !== null) {
-            var url = 'http://votelyac.ca/vote/?address=' + address + '&ward=' + ward;
+            var url = location.origin + '/vote/?address=' + address + '&ward=' + ward;
             window.location = url;
         }
     }

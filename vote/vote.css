@@ -31,7 +31,7 @@ html, body {
 
 #text_opt_in {
   font-size: 11px;
-  color: #ccc;
+  color: #999;
 }
 
 .image-container {
@@ -59,4 +59,8 @@ h1 {
     margin: 40px auto;
     border-radius: 25px;
     background-color: #fff;
+}
+
+.help-block{
+    font-size: 15px;
 }

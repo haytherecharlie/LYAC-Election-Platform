@@ -3,17 +3,16 @@ var verify = (function () {
     var url = location.href;
     var x = url.split('?');
     var y = x[1].split('&');
-    var baseURL = location.origin;
+    var redirectUrl = location.origin + '/thanks/';
     var urlValues = [];
     var count = 0;
-    window.location = location.origin + '/thanks/';
 
     for (i in y) {
         var temp = y[i].split('=');
         urlValues.push(temp[1]);
     }
 
-    console.log(urlValues);
+    $('#candidate').append(urlValues[1].split('_').join(' '));
 
     $(':input').each(function () {
         $(this).val(urlValues[count++]);
@@ -77,7 +76,7 @@ var verify = (function () {
                 }
 
                 // show the loading
-                $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
+                // $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
                 var jqxhr = $.post(url, $form.serialize(), function (data) {
                         console.log("Success! Data: " + data.statusText);
                         $(location).attr('href', redirectUrl);

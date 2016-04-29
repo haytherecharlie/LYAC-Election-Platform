@@ -1,3 +1,11 @@
+var dateTime = (function() {
+    var d = new Date();
+
+    if(d.getDate() + '/' + (d.getMonth()+1) + '/' + d.getFullYear() === '08/5/2016') {
+        window.location = location.origin + '/closed/';
+    }
+})();
+
 var address = (function () {
 
     var wardData = null;

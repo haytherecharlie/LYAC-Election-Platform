@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db06553d-6d52-45f0-984b-ad30a3093f94" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/check/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/check/verify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/check/verify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/closed/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/closed/verify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/closed/verify.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/location/location.js" afterPath="$PROJECT_DIR$/location/location.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/verify/index.html" afterPath="$PROJECT_DIR$/verify/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/verify/verify.js" afterPath="$PROJECT_DIR$/verify/verify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vote/index.html" afterPath="$PROJECT_DIR$/vote/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vote/vote.css" afterPath="$PROJECT_DIR$/vote/vote.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vote/vote.js" afterPath="$PROJECT_DIR$/vote/vote.js" />
     </list>
     <ignored path="lyac_election.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,45 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/verify/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="verify.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/verify/verify.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="78" column="128" selection-start-line="78" selection-start-column="128" selection-end-line="78" selection-end-column="128" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/location/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="location.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/location/location.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="-1381">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -91,13 +52,14 @@
         <option value="$PROJECT_DIR$/thanks/index.html" />
         <option value="$PROJECT_DIR$/verify/verify.css" />
         <option value="$PROJECT_DIR$/check/verify.js" />
-        <option value="$PROJECT_DIR$/location/location.js" />
         <option value="$PROJECT_DIR$/vote/vote.js" />
         <option value="$PROJECT_DIR$/check/index.html" />
         <option value="$PROJECT_DIR$/vote/index.html" />
         <option value="$PROJECT_DIR$/vote/vote.css" />
         <option value="$PROJECT_DIR$/verify/index.html" />
         <option value="$PROJECT_DIR$/verify/verify.js" />
+        <option value="$PROJECT_DIR$/closed/index.html" />
+        <option value="$PROJECT_DIR$/location/location.js" />
       </list>
     </option>
   </component>
@@ -153,6 +115,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lyac_election" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyac_election" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lyac_election" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="location" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,12 +199,12 @@
       <workItem from="1460678998197" duration="6038000" />
       <workItem from="1460939758395" duration="440000" />
       <workItem from="1461274899558" duration="3751000" />
-      <workItem from="1461881405178" duration="6251000" />
+      <workItem from="1461881405178" duration="7005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30235000" />
+    <option name="totallyTimeSpent" value="30989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -587,10 +563,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/closed/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/closed/verify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/thanks/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/location/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verify/verify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="78" column="128" selection-start-line="78" selection-start-column="128" selection-end-line="78" selection-end-column="128" />
           <folding />
         </state>
       </provider>
@@ -607,26 +615,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/verify/verify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="128" selection-start-line="78" selection-start-column="128" selection-end-line="78" selection-end-column="128" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/location/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/location/location.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="-1381">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding />
         </state>
       </provider>

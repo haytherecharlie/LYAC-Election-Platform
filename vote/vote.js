@@ -68,7 +68,7 @@ var verify = (function () {
                                 message: 'The first name must be more than 1 and less than 30 characters long'
                             },
                             regexp: {
-                                regexp: /^[A-z]+$/,
+                                regexp: /^[a-zA-Z0-9_ ]*$/,
                                 message: 'The first name can only accept alphabetical input'
                             },
                         }
@@ -83,6 +83,10 @@ var verify = (function () {
                                 min: 1,
                                 max: 40,
                                 message: 'Last Name must be more than 1 and less than 40 characters long'
+                            },
+                            regexp: {
+                                regexp: /^[a-zA-Z0-9_ ]*$/,
+                                message: 'The first name can only accept alphabetical input'
                             },
                         }
                     },
@@ -119,7 +123,7 @@ var verify = (function () {
                             stringLength: {
                                 min: 11,
                                 max: 11,
-                                message: 'Cell Number must be a 11 digits (1 + area code + number) with no spaces'
+                                message: 'Cell Number must be a 11 digits ( 1 + area code + number) with no spaces'
                             },
                             regexp: {
                                 regexp: /^[0-9]+$/,
@@ -191,11 +195,7 @@ var verify = (function () {
     }
 
     function setURI(inputArray) {
-        var url = location.origin + '/verify/?' +
-            'timestamp=2349234982' +
-            '&your_vote=' + inputArray[6] +
-            '&referendum=' + inputArray[7] +
-            '&ward=' + inputArray[13];
+        var url = location.origin + '/check/';
         return url;
     }
 
